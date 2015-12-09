@@ -20,7 +20,7 @@ $token = new Services_Twilio_AccessToken(
 
 // Grant access to Conversations
 $grant = new Services_Twilio_Auth_ConversationsGrant();
-$grant->setConfigurationProfileSid('VS30dd0fbecf6725f558373c452dad52a8');
+$grant->setConfigurationProfileSid($TWILIO_CONFIGURATION_SID);
 $token->addGrant($grant);
 
 // return serialized token and the user's randomly generated ID
