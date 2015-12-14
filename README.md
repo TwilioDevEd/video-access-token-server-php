@@ -38,7 +38,8 @@ php -S localhost:8000
 Alternately, you could simple place the contents of this project directly in the
 webroot of your server and visit `index.html`.
 
-Your application should now be running at [http://localhost:8000](http://localhost:8000). Send an invite to another user and start video chatting! If you just want to test it you can invite your own identity to video chat with yourself.
+Your application should now be running at [http://localhost:8000](http://localhost:8000). 
+Send an invite to another user in another browser tab/window and start video chatting!
 
 ![screenshot of chat app](https://camo.githubusercontent.com/57dddb5e27dba5ac9ba64049f0cacc654cb78036/687474703a2f2f692e696d6775722e636f6d2f6e5652373046512e706e67)
 
