@@ -35,7 +35,7 @@ Now we should be all set! Run the application using the `php -S` command.
 php -S localhost:8000
 ```
 
-Alternately, you could simple place the contents of this project directly in the
+Alternately, you could simply place the contents of this project directly in the
 webroot of your server and visit `index.html`.
 
 Your application should now be running at [http://localhost:8000](http://localhost:8000). 
