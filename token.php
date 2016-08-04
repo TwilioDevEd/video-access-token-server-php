@@ -1,7 +1,10 @@
 <?php
-require_once('./twilio-php/Services/Twilio.php');
-require_once('./randos.php');
-require_once('./config.php');
+include('./vendor/autoload.php');
+include('./config.php');
+include('./randos.php');
+
+use Twilio\Jwt\AccessToken;
+use Twilio\Jwt\Grants\ConversationsGrant;
 
 // An identifier for your app - can be anything you'd like
 $appName = 'TwilioVideoDemo';
@@ -10,7 +13,7 @@ $appName = 'TwilioVideoDemo';
 $identity = randomUsername();
 
 // Create access token, which we will serialize and send to the client
-$token = new Services_Twilio_AccessToken(
+$token = new AccessToken(
     $TWILIO_ACCOUNT_SID, 
     $TWILIO_API_KEY, 
     $TWILIO_API_SECRET, 
@@ -19,7 +22,7 @@ $token = new Services_Twilio_AccessToken(
 );
 
 // Grant access to Conversations
-$grant = new Services_Twilio_Auth_ConversationsGrant();
+$grant = new ConversationsGrant();
 $grant->setConfigurationProfileSid($TWILIO_CONFIGURATION_SID);
 $token->addGrant($grant);
 
