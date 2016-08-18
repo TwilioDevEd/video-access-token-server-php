@@ -4,27 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "843dfdbbbbb106ad76b3031e556d7356",
-    "content-hash": "e60b92dfb9b9f1759b4643f3d32dd34a",
+    "hash": "fc3d969f0cabcaeacf90cf91ee572e33",
+    "content-hash": "9b0d6fdb9b99dc2a6bd448983411e03a",
     "packages": [
         {
             "name": "twilio/sdk",
-            "version": "5.0.0-RC10",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "9e3ace6957be954c1a2afa1798de71fd9498068a"
+                "reference": "f8a4589aa716deea0f1eaf017d667fd4af793cc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/9e3ace6957be954c1a2afa1798de71fd9498068a",
-                "reference": "9e3ace6957be954c1a2afa1798de71fd9498068a",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/f8a4589aa716deea0f1eaf017d667fd4af793cc1",
+                "reference": "f8a4589aa716deea0f1eaf017d667fd4af793cc1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
+                "apigen/apigen": "^4.1",
                 "phpunit/phpunit": "4.5.*"
             },
             "type": "library",
@@ -50,15 +51,13 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2016-07-26 20:34:07"
+            "time": "2016-08-16 17:48:53"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "twilio/sdk": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
