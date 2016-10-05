@@ -36,7 +36,7 @@ composer install
 Now we should be all set! Run the application using the `php -S` command.
 
 ```bash
-php -S localhost:8000
+php -S 127.0.0.1:8000
 ```
 
 Alternately, you could simply place the contents of this project directly in the
