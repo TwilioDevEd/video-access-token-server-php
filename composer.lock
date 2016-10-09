@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc3d969f0cabcaeacf90cf91ee572e33",
-    "content-hash": "9b0d6fdb9b99dc2a6bd448983411e03a",
+    "hash": "26793787139c27c6390f2c12cbb41fc8",
+    "content-hash": "705ed8d79f0f8e52aebbd1953e8af871",
     "packages": [
         {
             "name": "twilio/sdk",
-            "version": "5.0.2",
+            "version": "5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "f8a4589aa716deea0f1eaf017d667fd4af793cc1"
+                "reference": "e0870d75c5798427acd3fffb91202529cd521868"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/f8a4589aa716deea0f1eaf017d667fd4af793cc1",
-                "reference": "f8a4589aa716deea0f1eaf017d667fd4af793cc1",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/e0870d75c5798427acd3fffb91202529cd521868",
+                "reference": "e0870d75c5798427acd3fffb91202529cd521868",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2016-08-16 17:48:53"
+            "time": "2016-09-19 17:49:18"
         }
     ],
     "packages-dev": [],

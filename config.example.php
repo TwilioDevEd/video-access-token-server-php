@@ -1,5 +1,5 @@
-<?php
 
+<?php
 // see README.md for an explanation of these config params
 $TWILIO_ACCOUNT_SID = 'your account sid here';
 $TWILIO_CONFIGURATION_SID = 'your configuration sid here';
