@@ -4,7 +4,7 @@ include('./config.php');
 include('./randos.php');
 
 use Twilio\Jwt\AccessToken;
-use Twilio\Jwt\Grants\ConversationsGrant;
+use Twilio\Jwt\Grants\VideoGrant;
 
 // An identifier for your app - can be anything you'd like
 $appName = 'TwilioVideoDemo';
@@ -22,7 +22,7 @@ $token = new AccessToken(
 );
 
 // Grant access to Conversations
-$grant = new ConversationsGrant();
+$grant = new VideoGrant();
 $grant->setConfigurationProfileSid($TWILIO_CONFIGURATION_SID);
 $token->addGrant($grant);
 
