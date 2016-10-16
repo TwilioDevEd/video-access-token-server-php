@@ -12,7 +12,7 @@ if (!navigator.webkitGetUserMedia && !navigator.mozGetUserMedia) {
 $.getJSON('/token.php', function (data) {
   identity = data.identity;
 
-  // Create a Conversations Client and connect to Twilio
+  // Create a Video Client and connect to Twilio
   videoClient = new Twilio.Video.Client(data.token);
   document.getElementById('room-controls').style.display = 'block';
 
@@ -71,7 +71,7 @@ function roomJoined(room) {
     log("Participant '" + participant.identity + "' left the room");
   });
 
-  // When the conversation ends, stop capturing local video
+  // When the room ends, stop capturing local video
   room.on('disconnected', function () {
     log('Left');
     room.localParticipant.media.detach();
