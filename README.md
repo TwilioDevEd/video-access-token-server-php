@@ -42,8 +42,8 @@ php -S 127.0.0.1:8000
 Alternately, you could simply place the contents of this project directly in the
 webroot of your server and visit `index.html`.
 
-Your application should now be running at [http://localhost:8000](http://localhost:8000). 
-Send an invite to another user in another browser tab/window and start video chatting!
+Your application should now be running at [http://localhost:8000](http://localhost:8000).
+Select any room name and join the room. Join the same room with another user in another browser tab or window to start video chatting!
 
 ![screenshot of chat app](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/video2.original.png)
 
