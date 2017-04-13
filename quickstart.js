@@ -36,7 +36,7 @@ if (!navigator.webkitGetUserMedia && !navigator.mozGetUserMedia) {
 // from the room, if joined.
 window.addEventListener('beforeunload', leaveRoomIfJoined);
 
-$.getJSON('/token', function(data) {
+$.getJSON('/token.php', function(data) {
   identity = data.identity;
 
   document.getElementById('room-controls').style.display = 'block';
