@@ -1,16 +1,13 @@
 <?php
 include('./vendor/autoload.php');
 include('./config.php');
-include('./randos.php');
 
 use Twilio\Jwt\AccessToken;
 use Twilio\Jwt\Grants\VideoGrant;
 
-// An identifier for your app - can be anything you'd like
-$appName = 'TwilioVideoDemo';
-
 // choose a random username for the connecting user
-$identity = randomUsername();
+$identity = isset($_GET["identity"]) ? $_GET["identity"] : "identity";
+$room = isset($_GET["room"]) ? $_GET["room"] :  "room";
 
 // Create access token, which we will serialize and send to the client
 $token = new AccessToken(
@@ -23,11 +20,7 @@ $token = new AccessToken(
 
 // Grant access to Video
 $grant = new VideoGrant();
-$grant->setConfigurationProfileSid($TWILIO_CONFIGURATION_SID);
+$grant->setRoom($room);
 $token->addGrant($grant);
 
-// return serialized token and the user's randomly generated ID
-echo json_encode(array(
-    'identity' => $identity,
-    'token' => $token->toJWT(),
-));
+echo $token->toJWT();
