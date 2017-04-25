@@ -1,4 +1,4 @@
-# Video Access Token for PHP
+# Video Access Token Server for PHP
 
 This server-side application demonstrates generating Access Token for Twilio Video.
 Before we begin, we need to collect

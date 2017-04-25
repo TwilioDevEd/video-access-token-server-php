@@ -5,9 +5,9 @@ include('./config.php');
 use Twilio\Jwt\AccessToken;
 use Twilio\Jwt\Grants\VideoGrant;
 
-// choose a random username for the connecting user
+// Use identity and room from query string if provided
 $identity = isset($_GET["identity"]) ? $_GET["identity"] : "identity";
-$room = isset($_GET["room"]) ? $_GET["room"] :  "room";
+$room = isset($_GET["room"]) ? $_GET["room"] :  "";
 
 // Create access token, which we will serialize and send to the client
 $token = new AccessToken(
