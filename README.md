@@ -1,5 +1,8 @@
 # Video Access Token Server for PHP
 
+#### Looking for the JavaScript Video Quickstart? It has been moved [here](https://github.com/twilio/video-quickstart-js).
+
+
 This server-side application demonstrates generating Access Token for Twilio Video.
 Before we begin, we need to collect
 all the config values we need to run the application:
