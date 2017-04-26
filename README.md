@@ -16,7 +16,7 @@ When you generate an API key pair at the URLs above, your API Secret will only
 be shown once - make sure to save this in a secure location, 
 or possibly your `~/.bash_profile`.
 
-## Setting Up The PHP Application
+## Setting up the PHP Application
 
 Create a configuration file for your application:
 
