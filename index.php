@@ -20,7 +20,8 @@ $token = new AccessToken(
 
 // Grant access to Video
 $grant = new VideoGrant();
-$grant->setRoom($room);
+//$grant->setRoom($room);
 $token->addGrant($grant);
 
-echo $token->toJWT();
+header('Content-Type: application/json; charset=utf-8');
+echo '{"identity":"'.$identity.'","token":"'.$token->toJWT().'" }';
