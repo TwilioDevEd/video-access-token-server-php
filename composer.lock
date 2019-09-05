@@ -1,31 +1,35 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0d8f23e021b31bb4f54aeb835165637",
+    "content-hash": "0dffc6f887d538fb370f54fe75caf196",
     "packages": [
         {
             "name": "twilio/sdk",
-            "version": "5.7.3",
+            "version": "5.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "67e16c2d9deaae5d1cebafc2d07c0e6215c92dfb"
+                "reference": "a0e74651cdfba6dda780084e3dfc83002c0a71f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/67e16c2d9deaae5d1cebafc2d07c0e6215c92dfb",
-                "reference": "67e16c2d9deaae5d1cebafc2d07c0e6215c92dfb",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/a0e74651cdfba6dda780084e3dfc83002c0a71f2",
+                "reference": "a0e74651cdfba6dda780084e3dfc83002c0a71f2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.5.0"
             },
             "require-dev": {
                 "apigen/apigen": "^4.1",
+                "guzzlehttp/guzzle": "^6.3",
                 "phpunit/phpunit": "4.5.*"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
             },
             "type": "library",
             "autoload": {
@@ -50,7 +54,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2017-04-12T17:49:25+00:00"
+            "time": "2019-09-04T23:10:35+00:00"
         }
     ],
     "packages-dev": [],
