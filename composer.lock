@@ -1,36 +1,40 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0d8f23e021b31bb4f54aeb835165637",
+    "content-hash": "cb22d7acc19b5191f415cb5b500630e3",
     "packages": [
         {
             "name": "twilio/sdk",
-            "version": "5.7.3",
+            "version": "6.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "67e16c2d9deaae5d1cebafc2d07c0e6215c92dfb"
+                "reference": "eba44af458c63227acc9a2449f21733a6f72ce86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/67e16c2d9deaae5d1cebafc2d07c0e6215c92dfb",
-                "reference": "67e16c2d9deaae5d1cebafc2d07c0e6215c92dfb",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/eba44af458c63227acc9a2449f21733a6f72ce86",
+                "reference": "eba44af458c63227acc9a2449f21733a6f72ce86",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
-                "apigen/apigen": "^4.1",
-                "phpunit/phpunit": "4.5.*"
+                "guzzlehttp/guzzle": "^6.3",
+                "phpunit/phpunit": ">=4.5",
+                "theseer/phpdox": "^0.12.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Twilio\\": "Twilio/"
+                    "Twilio\\": "src/Twilio/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -50,7 +54,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2017-04-12T17:49:25+00:00"
+            "time": "2020-05-27T19:28:33+00:00"
         }
     ],
     "packages-dev": [],
