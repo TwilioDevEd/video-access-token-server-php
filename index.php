@@ -1,9 +1,15 @@
 <?php
 include('./vendor/autoload.php');
-include('./config.php');
 
 use Twilio\Jwt\AccessToken;
 use Twilio\Jwt\Grants\VideoGrant;
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$TWILIO_ACCOUNT_SID = $_ENV['TWILIO_ACCOUNT_SID'];
+$TWILIO_API_KEY = $_ENV['TWILIO_API_KEY'];
+$TWILIO_API_SECRET = $_ENV['TWILIO_API_SECRET'];
 
 // Use identity and room from query string if provided
 $identity = isset($_GET["identity"]) ? $_GET["identity"] : "identity";
