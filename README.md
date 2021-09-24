@@ -24,10 +24,10 @@ or possibly your `~/.bash_profile`.
 Create a configuration file for your application:
 
 ```bash
-cp config.example.php config.php
+cp .env.example .env
 ```
 
-Edit `config.php` with the three configuration parameters we gathered from above.
+Edit `.env` with the three configuration parameters we gathered from above.
 
 Next, we'll need to install the Twilio Helper library via [Composer](https://getcomposer.org/).
 
